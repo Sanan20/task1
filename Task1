@@ -1,0 +1,41 @@
+//TASK#1
+
+function student(name, section, gpa) {
+  this.name;
+  this.section;
+  this.gpa;
+}
+function Task() {
+  let std1 = new student("Sanan", "B", 2.9);
+  let std2 = new student("Abeera", "A", 3.9);
+  let std3 = new student("Mustafa", "B", 2.3);
+
+  console.log("Student#1")
+  console.log(std1.name)
+
+  console.log("Student#2")
+  console.log(std2.name)
+
+  console.log("Student#3")
+  console.log(std3.name)
+
+  console.log("Student#1 Data")
+  console.log(std1)
+
+  console.log("Student#2 Data")
+  console.log(std2)
+
+  console.log("Student#3 Data")
+  console.log(std3)
+
+  console.log("-----------")
+  return [std1, std2, std3];
+
+}
+
+let student = Task();
+
+
+let student = student.filter(function(student) {
+  return student.gpa > 2.1;
+}
